@@ -53,9 +53,12 @@ post '/*' do
   valid = rsa.public_key.verify(
     OpenSSL::Digest::MD5.new, authorization, auth_str)
 
-  if valid
-    body({'Status' => 'OK'}.to_json)
-  else
-    halt 400, "Authorization failed!"
-  end
+  # if valid
+  #   body({'Status' => 'OK'}.to_json)
+  # else
+  #   halt 400, "Authorization failed!"
+  # end
+  puts authorization
+  puts req_body
+  body({'Status' => 'OK'}.to_json)
 end
