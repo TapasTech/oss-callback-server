@@ -1,5 +1,5 @@
 GEM
-  remote: https://ruby.taobao.org/
+  remote: https://gems.ruby-china.com/
   specs:
     rack (1.6.4)
     rack-protection (1.5.3)
@@ -17,4 +17,4 @@ DEPENDENCIES
   sinatra
 
 BUNDLED WITH
-   1.10.6
+   1.16.3
